@@ -4,8 +4,9 @@ import { OrbitControls } from "three/OrbitControls"
 import { GLTFLoader } from "three/GLTFLoader"
 import { TWEEN } from "tween"
 
-//const BASE_URL = "http://adam-lyon.com/test/#/"
-const BASE_URL = "http://localhost:3000/test/#/"
+const BASE_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+                  ? "http://localhost:3000/portfolio-site/#/"
+                  : "https://adam-lyon.com/portfolio-site/#/"
 
 let camera, scene, renderer;
 var domObject;
