@@ -92,8 +92,8 @@ scene.add( hemiLight );*/
   scene.add(mesh);
 ///////////////////////////////////////////////////
   var element2 = document.createElement("iframe");
-  element2.style.width = "480px";
-  element2.style.height = "705px";
+  element2.style.width = "720px";
+  element2.style.height = "1057.5px";
   element2.style.opacity = 1;
   element2.src = BASE_URL + "home";  //"test.html";
 
@@ -102,8 +102,8 @@ scene.add( hemiLight );*/
   domObject2.translateX( 216.6 );
   domObject2.translateY( 338.5 );
   domObject2.translateZ( -93 );
-  domObject2.scale.x = .17;
-  domObject2.scale.y = .17;
+  domObject2.scale.x = .114;
+  domObject2.scale.y = .114;
   scene2.add(domObject2);
 
   var material2 = new THREE.MeshPhongMaterial({
@@ -112,7 +112,7 @@ scene.add( hemiLight );*/
     blending: THREE.NoBlending,
     side: THREE.DoubleSide,
   });
-  var geometry2 = new THREE.PlaneGeometry((480*.17)-1, (705*.17)-1);
+  var geometry2 = new THREE.PlaneGeometry((720*0.114)-1, (1057.5*0.114)-1);
   var mesh2 = new THREE.Mesh(geometry2, material2);
   mesh2.position.copy(domObject2.position);
   mesh2.rotation.copy(domObject2.rotation);
@@ -142,7 +142,7 @@ scene.add( hemiLight );*/
 
 
   const gltfLoader = new GLTFLoader();
-  gltfLoader.load("roomv6.glb", function(gltf) {
+  gltfLoader.load("assets/room.glb", function(gltf) {
     let asdas = 350
 
     gltf.scene.scale.set(asdas, asdas, asdas);
@@ -222,9 +222,9 @@ function SpawnVehicle() {
     scene.remove(car)
   }
 
-  let objects = [ "tractorPolice.glb", "fireEngine.glb", "sedan.glb", "truck.glb" ]
+  let objects = [ "tractorPolice", "fireEngine", "sedan", "truck" ]
   const gltfLoader = new GLTFLoader();
-  gltfLoader.load(objects[Math.floor(Math.random()*objects.length)], function(gltf) {
+  gltfLoader.load("assets/" + objects[Math.floor(Math.random()*objects.length)] + ".glb", function(gltf) {
     let asdas = 200
 
     gltf.scene.rotation.set(0, -degrees_to_radians(90), 0);
