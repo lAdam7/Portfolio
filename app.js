@@ -270,10 +270,10 @@ function onWindowResize() {
 }
 
 window.onmessage = function(e) {
-  if (e.data == "web#1") {
+  if (e.data == "projects" || e.data == "experiences") {
     //element.src = "http://adam-lyon.com/kf6012/part2/";
-    element.src = BASE_URL + "projects";
-    element.contentWindow.postMessage('ShowProjects', '*');
+    element.src = BASE_URL + e.data;
+    //element.contentWindow.postMessage('ShowProjects', '*');
     new TWEEN.Tween(mesh5.position)
     .to(
         {
