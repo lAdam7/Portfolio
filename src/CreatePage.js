@@ -1,9 +1,9 @@
 import * as THREE from "three"
 import { CSS3DObject } from "three/CSS3DRenderer"
 
-const BASE_URL = "https://adam-lyon.com/portfolio-site/#/" /*(location.hostname === "localhost" || location.hostname === "127.0.0.1")
+const BASE_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
                   ? "http://localhost:3000/portfolio-site/#/"
-                  : "https://adam-lyon.com/portfolio-site/#/"*/
+                  : "https://adam-lyon.com/portfolio-site/#/"
 
 export default class CreatePage {
 	constructor(URL, pageWidth, pageHeight, pageName, domObjectRotation, domObjectPosition, scaleX, scaleY) {
@@ -34,5 +34,9 @@ export default class CreatePage {
         this.mesh.castShadow = false;
         this.mesh.receiveShadow = true;
 	}
+
+    ChangeURL(URL) {
+        this.element.src = BASE_URL + URL; 
+    }
 
 }
