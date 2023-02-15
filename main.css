@@ -1,6 +1,5 @@
 
 body {
-    background-color: #ffffff;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -18,10 +17,7 @@ body {
   
   #css {
 
-    background: radial-gradient(
-      #071021,
-      #19324a
-    );
+
     
   }
   
@@ -32,3 +28,5 @@ body {
   iframe {
     border: 0;
   }
+
+  
