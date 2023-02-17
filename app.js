@@ -1,7 +1,7 @@
-import * as THREE from "three"
-import { CSS3DRenderer, CSS3DObject } from "three/CSS3DRenderer"
-import { GLTFLoader } from "three/GLTFLoader"
-import { TWEEN } from "tween"
+import * as THREE from "./libraries/three.js"
+import { CSS3DRenderer } from "./libraries/CSS3DRenderer.js"
+import { GLTFLoader } from "./libraries/GLTFLoader.js"
+import { TWEEN } from "./libraries/tween.js"
 
 import Camera  from "./src/Camera.js"
 import CreatePage from "./src/CreatePage.js"

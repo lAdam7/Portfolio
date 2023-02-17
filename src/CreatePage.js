@@ -1,5 +1,5 @@
-import * as THREE from "three"
-import { CSS3DObject } from "three/CSS3DRenderer"
+import * as THREE from "../libraries/three.js"
+import { CSS3DObject } from "../libraries/CSS3DRenderer.js"
 
 const BASE_URL = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
                   ? "http://localhost:3000/portfolio-site/#/"
