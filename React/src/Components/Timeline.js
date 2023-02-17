@@ -3,7 +3,9 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { Person, Work, LinkedIn, GitHub, Code, Mail } from "@mui/icons-material/"
 
-
+/*
+Timeline element for the ABOUT ME, EXPERIENCES and PROJECTS element that is used as the main navigator
+*/
 const Timeline = () => {
 
     return (

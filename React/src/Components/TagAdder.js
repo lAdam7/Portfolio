@@ -14,6 +14,9 @@ const TAG_FINDER = [ // Retain caps for acceptable
 ]
 const DEFAULT_BACKGROUNDCOLOUR = "#808080"; // Colour of tag if not found in TAG_FINDER
 
+/*
+Find colour that the tag should be
+*/
 const TagMatcher = (tagName) => {
     let colour = DEFAULT_BACKGROUNDCOLOUR;
 
@@ -29,6 +32,9 @@ const TagMatcher = (tagName) => {
     return colour;
 }
 
+/*
+Display all the tags within the project card, for the languages / tech used
+*/
 const TagAdder = (props) => {
 
     return (     

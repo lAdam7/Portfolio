@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import BouncingLogo from "../Components/BouncingLogo"
 import logo from "../testlogo.png"
 
+/*
+Animated IDLE screen (currently react icon)
+*/
 const Idle = () => {
     const [innerWidth, setInnerWidth] = useState(window.innerWidth);
     const [innerHeight, setInnerHeight] = useState(window.innerHeight);

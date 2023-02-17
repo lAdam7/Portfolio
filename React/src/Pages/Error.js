@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import BouncingLogo from "../Components/BouncingLogo"
 import logo from "../images/error.png"
 
+/*
+Displaying an error page when navigating to a page that doesn't exist
+*/
 const Error = () => {
     const [innerWidth, setInnerWidth] = useState(window.innerWidth);
     const [innerHeight, setInnerHeight] = useState(window.innerHeight);

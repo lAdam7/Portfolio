@@ -49,6 +49,9 @@ const ProjectInformation = [
     }
   ];
 
+/*
+Display all projects using the bootstrap card style
+*/
 const Projects = () => {
     document.body.style.overflow = "visible";
     return (

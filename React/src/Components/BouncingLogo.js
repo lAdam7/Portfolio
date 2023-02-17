@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Used to spawn the logo in a random place, to make each load unique
 function generateRandom(min, max) {
 
     // find diff
@@ -17,6 +18,9 @@ function generateRandom(min, max) {
     return rand;
 }
 
+/*
+Upon collision opposite set the axis for animation
+*/
 const BouncingLogo = (props) => {
     const [x, setX] = useState(50);
     const [y, setY] = useState(50);

@@ -25,6 +25,9 @@ const ExperienceInformation = [
     }
 ]
 
+/*
+Show all experiences usiong the VerticalTimeline element
+*/
 const Experiences = () => {
     document.body.style.overflow = "visible";
     return (

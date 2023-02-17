@@ -5,6 +5,9 @@ import Timeline from "../Components/Timeline";
 
 import { AnimatePresence, motion } from "framer-motion";
 
+/*
+Animating the initial screen, then display the timeline with the ABOUT ME, EXPERIENCES, PROJECTS
+*/
 const Home = () => {
     const [finishedTextAnimation, setFinishedTextAnimation] = useState(false);
     const [buttonPressed, setButtonPressed] = useState(false);
